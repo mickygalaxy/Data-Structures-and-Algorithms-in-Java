@@ -1,0 +1,18 @@
+:- Properties Of Modulo(%) -:
+
+ #  (a+b) % m = ((a%m)+(b%m))%m
+ #  (a-b) % m = ((a%m)-(b%m)+m)%m
+ #  (a*b) % m = ((a%m)*(b%m))%m
+ #  (a/b) % m = ((a%m)*(b^-1 % m))%m
+ #  (a%m)%m   = a%m
+ #  m%m = 0 (such that x belong to positive integers) 
+where b^-1 % m => mutiplicative modulo inverse(mmi)
+
+
+eg:- (6*y)%7 =1
+    
+y =  mmi for 6 and  y =6
+(6*6)%7 = 36%7 =1
+
+
+mmi = b^-1 % m means that b & m are co-primes
