@@ -1,0 +1,35 @@
+question link - https://leetcode.com/problems/restore-the-array/
+answer   link - https://leetcode.com/problems/restore-the-array/solutions/3447868/java-easy-solution/
+
+-: solution :- 
+
+class Solution {
+    public int MOD = (int)1e9+7;
+    public int solve(String s,int k,int idx,int[]dp){
+        if(idx>=s.length()){
+            return 1;
+        }
+        if(s.charAt(idx)=='0'){
+            return 0;
+        }
+        if(dp[idx] != -1){
+            return dp[idx];
+        }
+        int ways =0;
+        long currNum = 0;
+        for(int i= idx; i< s.length(); i++){
+            currNum = currNum*10 + s.charAt(i)-'0';
+            if(currNum >k){
+                break;
+            }
+            ways = (ways + solve(s,k,i+1,dp))%MOD;
+        }
+        return dp[idx] = ways;
+    }
+    public int numberOfArrays(String s, int k) {
+        
+    int[] dp = new int[s.length()];
+        Arrays.fill(dp,-1);
+        return solve(s,k,0,dp);
+    }
+}
