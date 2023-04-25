@@ -1,0 +1,42 @@
+question :- https://leetcode.com/problems/smallest-number-in-infinite-set/
+Answer   :- https://leetcode.com/problems/smallest-number-in-infinite-set/discuss/3455121/java
+
+-: Solution :-
+
+class SmallestInfiniteSet {
+private PriorityQueuepq = null;
+private Set set = null;
+
+public SmallestInfiniteSet() {
+    
+    pq = new PriorityQueue<>(1000); // Initializing
+    set = new HashSet<>(1000); // Initializing
+    for(int i=1;i<=1000;i++){
+        pq.add(i);
+        set.add(i);
+    }
+    
+}
+
+public int popSmallest() {
+    
+    int x = pq.poll(); // remove from PriorityQueue
+    set.remove(x); // remove from set too
+    return x;
+}
+
+public void addBack(int num) {
+    if(!set.contains(num)){
+        pq.add(num);
+        set.add(num);
+    }
+}
+}
+
+/**
+
+Your SmallestInfiniteSet object will be instantiated and called as such:
+SmallestInfiniteSet obj = new SmallestInfiniteSet();
+int param_1 = obj.popSmallest();
+obj.addBack(num);
+*/ 
