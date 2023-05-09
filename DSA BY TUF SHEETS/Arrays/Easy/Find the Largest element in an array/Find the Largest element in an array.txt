@@ -1,0 +1,95 @@
+
+
+Question link:- https://practice.geeksforgeeks.org/problems/largest-element-in-array4009/0
+utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=largest-element-in-array
+
+
+
+Problem Statement: Given an array, we have to find the largest element in the array.
+
+Examples:
+
+Example 1:
+Input: arr[] = {2,5,1,3,0};
+Output: 5
+Explanation: 5 is the largest element in the array. 
+
+Example2: 
+Input: arr[] = {8,10,5,7,9};
+Output: 10
+Explanation: 10 is the largest element in the array. 
+
+
+
+Solution1: Sorting
+
+Intuition: We can sort the array in ascending order, hence the largest element will be at the last index of the array. 
+
+Approach: 
+
+Sort the array in ascending order.
+Print the (size of the array -1)th index.
+DryRun: 
+
+Before sorting: arr[] = {2,5,1,3,0};
+
+After sorting: arr[] = {0,1,2,3,5};
+
+Hence answer : arr[sizeofthearray-1] =5
+
+Output:
+
+The Largest element in the array is: 5
+The Largest element in the array is: 10
+
+Time Complexity: O(N*log(N))
+
+Space Complexity: O(n)
+
+
+
+
+
+
+Solution2: Using a max variable
+
+Intuition: We can maintain a max variable which will update whenever the current value is greater than the value in the max variable.  
+
+Approach: 
+
+Create a max variable and initialize it with arr[0].
+Use a for loop and compare it with other elements of the array
+If any element is greater than the max value, update the max value with the element’s value
+Print the max variable.
+
+Output:
+
+The largest element in the array is: 5
+The largest element in the array is: 10
+
+Time Complexity: O(N)
+
+Space Complexity: O(1)
+
+
+
+
+
+
+Solution3: Using Two Pointer Approach 
+
+The given code uses a two-pointer approach to find the largest element in the array. The two pointers, i and j, start from opposite ends of the array and move towards each other.
+
+The logic behind the code is as follows:
+
+~ Initialize i to the start of the array and j to the end of the array.
+~ Compare the elements at arr[i] and arr[j].
+~ If arr[i] is greater than or equal to arr[j], update the ans variable to arr[i] and decrement j by 1 to move the right pointer towards the left.
+~ If arr[j] is greater than arr[i], update the ans variable to arr[j] and increment i by 1 to move the left pointer towards the right.
+~ Repeat steps 2-4 until i becomes equal to j, indicating that the pointers have crossed each other.
+~ Return the value of ans, which will be the largest element in the array.
+
+The code effectively compares elements from both ends of the array, updating the ans variable based on the larger element encountered. Since each element is compared once, the time complexity is O(n), where n is the number of elements in the array.
+
+Time Complexity: O(N)
+Space Complexity: O(1)
