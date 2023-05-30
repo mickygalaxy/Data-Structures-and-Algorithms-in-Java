@@ -78,7 +78,7 @@ public class Main {
         for(int i=0;i<size;i++){
             array[i] = sc.nextInt();
         }
-        Arrays.sort(array);                  // its take (n*long) time
+        Arrays.sort(array);                  // its take (n*log(n)) time
         int newSize = BetterSolution(array);
         for (int i=0;i<newSize;i++){         // its take (n) time
             System.out.println(array[i]+" ");
