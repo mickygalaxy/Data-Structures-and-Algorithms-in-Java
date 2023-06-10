@@ -26,6 +26,11 @@ Algorithm:
 @ If the element at j index is zero then only increment j.
  */
 
+/*
+Time Complexity  :- O(n)
+Space Complexity :- O(1)
+*/
+
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
