@@ -38,8 +38,8 @@ Union of arr1 and arr2 is {1,2,3,4,5,6,7,8,9,10,11,12}
 
 
 /*
- Time complexity :- O(n+m)
- Space Complexity :- O(n+m)
+ Time complexity :- O((size1 + size2) log (size1 + size2))
+ Space Complexity :- O(size1 + size2)
  */
 import java.util.Scanner;
 
