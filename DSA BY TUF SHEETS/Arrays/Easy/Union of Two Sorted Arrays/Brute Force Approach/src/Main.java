@@ -69,7 +69,7 @@ public class Main {
 
         // Perform the union operation
         performUnion(union, array1, array2, size1, size2);
-
+        Arrays.sort(union);
         // Display the union array
         getData(union);
 
