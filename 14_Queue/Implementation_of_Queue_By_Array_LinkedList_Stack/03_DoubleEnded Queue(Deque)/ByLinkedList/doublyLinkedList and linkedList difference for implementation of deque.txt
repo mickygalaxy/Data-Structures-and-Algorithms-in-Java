@@ -1,0 +1,19 @@
+The main difference between implementing a deque with a simple linked list and a double-ended linked list lies in the efficiency of certain operations.
+
+Simple Linked List:
+
+In a simple linked list implementation, each node only has a reference to the next node, forming a unidirectional chain.
+Adding an element to the front of the deque (addFirst()) or removing an element from the front (removeFirst()) can be done in O(1) time since we only need to update the head pointer.
+However, adding an element to the end of the deque (addLast()) or removing an element from the end (removeLast()) requires traversing the entire list to reach the last node, resulting in a time complexity of O(n), where n is the number of elements in the deque. This is because we need to update the next pointers of all nodes along the way.
+The simple linked list implementation is generally more memory-efficient compared to the doubly-ended linked list since it only requires a single pointer in each node.
+
+
+
+Doubly Ended Linked List:
+
+In a doubly-ended linked list implementation, each node has references to both the next node and the previous node, forming a bidirectional chain.
+Adding an element to the front of the deque (addFirst()) or removing an element from the front (removeFirst()) can still be done in O(1) time by updating the head pointer, similar to the simple linked list implementation.
+Adding an element to the end of the deque (addLast()) or removing an element from the end (removeLast()) can now be done in O(1) time since we have a reference to the last node. We simply update the next and previous pointers accordingly.
+The doubly-ended linked list implementation allows for more efficient operations at both ends of the deque, making it a better choice if frequent operations involve the end of the deque.
+However, the doubly-ended linked list implementation requires slightly more memory than the simple linked list implementation since each node must store an additional pointer to the previous node.
+In summary, a simple linked list implementation is sufficient for basic deque functionality, but if frequent operations involve adding or removing elements from both ends of the deque, a doubly-ended linked list implementation provides better performance.
