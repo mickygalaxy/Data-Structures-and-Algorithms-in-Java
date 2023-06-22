@@ -1,0 +1,70 @@
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Activity Selection ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Activity selection is a classic optimization problem where we are given a set of activities, each with a start time and end time, and the goal is to find the maximum number of non-overlapping activities that can be performed.
+
+Given N activities with their start and finish day given in array start[ ] and end[ ]. Select the maximum number of activities that can be performed by a single person, assuming that a person can only work on a single activity on a given day.
+
+# Note: Duration of the activity includes both starting and ending days.
+
+
+Example 1:
+
+Input:
+N = 2
+start[] = {2, 1}
+end[] = {2, 2}
+
+Output: 
+1
+Explanation:
+ A person can perform only one of the given activities.
+
+Constraints:
+1 ≤ N ≤ 2*105
+1 ≤ start[i] ≤ end[i] ≤ 109
+
+
+
+`````````````````````````````````````````````` Approach - 1     By Greedy ``````````````````````````````````````````````
+
+-: Algorithm :- 
+
+This problem can be solved using a greedy algorithm. Here's the algorithm:
+
+@ Sort the activities in ascending order of their finish times.
+@ Select the first activity from the sorted list as the first selected activity.
+@ For each remaining activity in the sorted list:
+    ~ If the start time of the current activity is greater than or equal to the finish time of the previously selected activity,
+              select the current activity and update the previously selected activity to the current one.
+    ~ Otherwise, ignore the current activity and continue to the next one.
+@ Repeat step 3 until all activities have been considered.
+
+Time Complexity :- O(n * log(n) )
+space Complexity :- O(n)
+
+`````````````````````````````````````````````` Approach - 1     By DP  ```````````````````````````````````````````````````
+
+-: Algorithm :- 
+
+dynamic programming algorithm to solve the Activity Selection Problem:
+
+@ Sort the activities based on their finish times in ascending order.
+
+@ Create an array, dp[], of the same size as the number of activities, initialized with 1s. dp[i] represents the maximum number of 
+    activities that can be selected from the subarray ending at activity i.
+
+@ Traverse the sorted activities from left to right:
+
+   ~ For each activity at index i, find the maximum value of dp[j] such that j < i and activity[j] doesn't overlap with activity[i]. 
+           In other words, activity[j].finish_time <= activity[i].start_time.
+
+   ~ Update dp[i] to be the maximum of dp[i] and dp[j] + 1.
+
+@ After traversing all activities, the maximum number of activities that can be selected will be the maximum value in the dp[] array.
+
+@ To find the actually selected activities, start from the activity with the maximum dp[] value and iteratively check which previous
+  activity contributes to the current dp[] value. Repeat this process until you reach an activity with dp[] value 1.
+
+Time Complexity :- O(n^2 )
+space Complexity :- O(n)
+
