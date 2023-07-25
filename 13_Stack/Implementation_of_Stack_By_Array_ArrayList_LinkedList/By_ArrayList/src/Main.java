@@ -81,7 +81,7 @@ public class Main {
                    }
                }
             }
-        }while(choice!=0); // if choice is 0 so condition is false so operation are stopped.
+        }while(choice!=0); // if the choice is 0 so the condition is false then operations are stopped.
 
 
 
