@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void Solution(String s){
-        // Get the size of the input string
+        // Get the size of the input string 
         int size = s.length();
 
         // Create a queue to store characters
