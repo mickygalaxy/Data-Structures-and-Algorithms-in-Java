@@ -1,3 +1,10 @@
+
+// Binary Search
+
+//Time Complexity :- O(log(n))
+//Space Complexity :- O(1)
+
+
 import java.util.Scanner;
 abstract class BinarySerach{
     interface Search{
