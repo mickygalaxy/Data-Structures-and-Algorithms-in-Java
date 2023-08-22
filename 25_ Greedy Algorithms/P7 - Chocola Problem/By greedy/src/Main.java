@@ -10,7 +10,7 @@ horizontal line with y1,y2,y3,--------yn-1 . compute the minimum cost of breakin
 
 /*
 Time Complexity :- O(n log(n))
-Space Complexity :- O(1)
+Space Complexity :- O(1)  
  */
 
 
