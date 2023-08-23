@@ -2,7 +2,7 @@
 //                                                    Optimal File Merge Patterns
 
 //Given n number of sorted files, the task is to find the minimum computations done to reach the Optimal Merge Pattern.
-//When two or more sorted files are to be merged altogether to form a single file, the minimum computations are done to reach this file are known as Optimal Merge Pattern.
+//When two or more sorted files are to be merged all together to form a single file, the minimum computations are done to reach this file are known as Optimal Merge Pattern.
 /*
 Examples:
 Given 3 files with sizes 2, 3, 4 units. Find an optimal way to combine these files
