@@ -58,7 +58,7 @@ public class Main {
         int amount = value;
         System.out.print("The Coins/Notes are  :- ");
         for(int i=0;i<indianCoins.length;){
-            if(indianCoins[i]<=amount){
+            if(indianCoins[i]<=amount){ 
                 count++;
                 amount-=indianCoins[i];
                 System.out.print("[ ₹"+indianCoins[i]+" ]");
