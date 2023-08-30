@@ -27,7 +27,7 @@ Constraints:
 
 `````````````````````````````````````````````` Approach - 1     By Greedy ``````````````````````````````````````````````
 
--: Algorithm :- 
+-:  Algorithm  :-   
 
 This problem can be solved using a greedy algorithm. Here's the algorithm:
 
