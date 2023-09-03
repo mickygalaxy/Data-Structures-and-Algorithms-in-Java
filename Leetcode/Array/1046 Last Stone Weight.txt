@@ -16,7 +16,7 @@ heap.add(each);
         int diff = Math.abs(top1-top2);
 
         if(diff!=0){
-            heap.add(diff);
+            heap.add(diff); 
         }
     }
 
