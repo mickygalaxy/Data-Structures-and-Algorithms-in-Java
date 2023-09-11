@@ -3,7 +3,7 @@ abstract class LinearSerach{
      interface Search{
         void LSearch(int[] array, int value);
     }
-        }
+        } 
 
 public class Main extends LinearSerach implements LinearSerach.Search {
     @Override
