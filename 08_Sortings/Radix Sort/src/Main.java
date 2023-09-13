@@ -11,7 +11,7 @@ for all digits until we reach the most significant digits. Use some stable sort 
 digit. Then stable sort them by the second least significant digit, then by the third, etc. If we use
 Counting sort as the stable sort, the total time is O(nd) ≈ O(n).
 
-Algorithm:
+Algorithm: 
 1) Take the least significant digit of each element.
 2) Sort the list of elements based on that digit, but keep the order of elements with the
 same digit (this is the definition of a stable sort).
