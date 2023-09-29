@@ -1,3 +1,3 @@
-public interface palindrome {
+public interface palindrome{
     public Boolean ItsPalindrome(int n);
 }
