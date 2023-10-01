@@ -14,7 +14,7 @@ Note that a string x is lexicographically smaller than string y if x comes befor
 Example 1:
   
 Input: n = 3, k = 27
-Output: "aay"
+Output: "aay" 
 Explanation: The numeric value of the string is 1 + 1 + 25 = 27, and it is the smallest string with such a value and length equal to 3.
 Example 2:
 
