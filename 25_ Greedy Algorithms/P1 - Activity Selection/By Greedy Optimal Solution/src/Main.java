@@ -5,7 +5,7 @@
 -: Algorithm :-
 This problem can be solved using a greedy algorithm. Here's the algorithm:
 
-@ Sort the activities in ascending order of their finish times.
+@ Sort the activities in ascending order of their finish times. 
 @ Select the first activity from the sorted list as the first selected activity.
 @ For each remaining activity in the sorted list:
     ~ If the start time of the current activity is greater than or equal to the finish time of the previously selected activity,
