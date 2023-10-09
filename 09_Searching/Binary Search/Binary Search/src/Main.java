@@ -6,7 +6,7 @@
  
 
 import java.util.Scanner;
-abstract class BinarySerach{
+abstract class BinarySerach{ 
     interface Search{
         int BSearch(int[] array, int value);
     }
