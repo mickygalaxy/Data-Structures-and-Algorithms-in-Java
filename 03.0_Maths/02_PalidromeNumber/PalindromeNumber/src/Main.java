@@ -5,7 +5,7 @@
 
 import java.util.Scanner;
 
-public class Main implements palindrome {
+public class Main implements palindrome { 
     static Scanner sc = new Scanner(System.in);
     @Override
     public Boolean ItsPalindrome(int n) {
