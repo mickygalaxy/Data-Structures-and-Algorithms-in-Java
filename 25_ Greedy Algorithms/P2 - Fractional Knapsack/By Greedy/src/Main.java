@@ -16,7 +16,7 @@ Output: 166.667
 //-------------------------------------------------------------------------------------------------------------------------------------------------------
 /*
 
--: An efficient solution is to use the Greedy approach :-
+-: An efficient solution is to use the Greedy approach :- 
 
 The greedy solution for the fractional knapsack problem works by sorting the items by their profit-to-weight ratio and then adding the items to the knapsack in decreasing order of their ratio.
 This ensures that we always add the items that will give us the most profit per unit of weight.
