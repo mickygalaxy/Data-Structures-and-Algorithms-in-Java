@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner; 
 import java.util.Stack;
-
+import java.lang.*;
 public class Main {
     static Queue<Integer> q = new LinkedList<>();
 
