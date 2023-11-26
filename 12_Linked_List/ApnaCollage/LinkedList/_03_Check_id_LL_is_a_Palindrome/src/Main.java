@@ -2,7 +2,7 @@
 //Using Iterative Approach 0(n)
 public class Main {
     public static class Node{
-        int data;
+        int data; 
         Node next; // reference variable ,its point to object
         public Node(int data){ //Constructor
             this.data=data;
