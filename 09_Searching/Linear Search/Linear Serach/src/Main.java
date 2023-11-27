@@ -1,7 +1,7 @@
 import java.util.Scanner;
 abstract class LinearSerach{
      interface Search{
-        void LSearch(int[] array, int value);
+        void LSearch(int[] array, int value); 
     }
         } 
 
