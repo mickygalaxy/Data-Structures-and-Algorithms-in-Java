@@ -8,7 +8,7 @@
 
 import java.util.Stack;
 
-public class Main {
+public class Main { 
 
 
     public static void Push_At_Bottom(Stack<Integer>s,int data){ // this function for push the data at bottom not the top
