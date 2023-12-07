@@ -5,7 +5,7 @@
 
 import java.util.Scanner;
 import java.util.Stack;
-
+ 
 public class Main {
 
     public static String reverseString(String str){
