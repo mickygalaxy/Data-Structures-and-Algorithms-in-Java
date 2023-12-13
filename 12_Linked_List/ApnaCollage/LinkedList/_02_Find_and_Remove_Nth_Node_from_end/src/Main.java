@@ -8,7 +8,7 @@ public class Main {
         public Node(int data){ //Constructor
             this.data=data;
             this.next=null;
-        }
+        } 
     }
     public void deleteNthfromEnd(int n){
         // calculate size;
