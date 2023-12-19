@@ -42,7 +42,7 @@ public class Main {
           else{
               optimalSolution2(start,end,totalActivity);
           }
-    }
+    } 
 
     private static void optimalSolution1(int[] start, int[] end, int totalActivity) { // Time Complexity :- O(n) when array are already sorted
         int count=1;
