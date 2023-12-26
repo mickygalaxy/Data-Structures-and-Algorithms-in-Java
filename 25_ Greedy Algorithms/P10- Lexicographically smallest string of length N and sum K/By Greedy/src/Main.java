@@ -45,7 +45,7 @@ public class Main {
         int N = sc.nextInt();
         System.out.print("Enter the Value of 'k' :- ");
         int K = sc.nextInt();
-        lexicographicallySmallerString(N,K);
+        lexicographicallySmallerString(N,K); 
     }
 
     private static void lexicographicallySmallerString(int n, int k) {
