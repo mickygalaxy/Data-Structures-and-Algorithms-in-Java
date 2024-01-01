@@ -6,7 +6,7 @@ public class Main {
         Node next; // reference variable ,its point to object 
         public Node(int data){ //Constructor
             this.data=data;
-            this.next=null;
+            this.next=null; 
         }
     }
 
