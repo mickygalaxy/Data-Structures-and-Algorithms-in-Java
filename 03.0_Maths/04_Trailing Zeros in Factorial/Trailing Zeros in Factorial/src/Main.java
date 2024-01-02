@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Main implements Trailing_Zeros_in_Factorial {
 
-    static Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in); 
     @Override
     public int trailingZeroIn_Factorial(int n) {        // Time Complexity 0(n)
 
