@@ -3,7 +3,7 @@
 
 // Time Complexity 0(d)
 
-import java.util.Scanner;
+import java.util.Scanner; 
 
 public class Main implements palindrome { 
     static Scanner sc = new Scanner(System.in);
