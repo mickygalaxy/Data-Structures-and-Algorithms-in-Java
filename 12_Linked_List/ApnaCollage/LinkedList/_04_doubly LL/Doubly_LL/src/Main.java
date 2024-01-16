@@ -10,7 +10,7 @@ public class Main {
     public class Node{
         int data;
         Node next; 
-        Node prev;
+        Node prev; 
 
         public Node(int data){
             this.data = data;
