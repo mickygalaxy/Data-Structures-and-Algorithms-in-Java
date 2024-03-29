@@ -6,7 +6,7 @@
 
 
 public class Main {
-
+ 
     public class Node{
         int data;
         Node next; 
